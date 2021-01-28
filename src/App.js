@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+
+import Alert from './components/shared/Alert';
+import Header from './components/shared/Header';
+import Splash from './components/Splash';
+import Eat from './components/Eat';
+import Gallery from './components/Gallery';
+import Location from './components/Location';
+import Team from './components/Team';
+import About from './components/About';
+import Footer from './components/shared/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Alert />
+        <Header />
+        <Switch>
+          <Route exact path="/" component={() => <Splash /> } />
+          <Route exact path="/eat" component={() => <Eat /> } />
+          <Route exact path="/gallery" component={() => <Gallery /> } />
+          <Route exact path="/location" component={() => <Location /> } />
+          <Route exact path="/team" component={() => <Team /> } />
+          <Route exact path="/about" component={() => <About /> } />
+          <Route exact path="/updates" component={() => <Updates /> } />
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

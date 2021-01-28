@@ -7,7 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Color Scheme
+ const yellow = '#FDB811';
+const black = '#443742';
+const lightGrey = '#93A3B1';
+const darkGrey = '#7C898B';
+const pink = '#E4959E'; */
+
+.alert {
+  background-color: #FDB811;
+}
+
+.footer {
+  background-color: #443742;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+
 }
