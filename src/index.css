@@ -14,14 +14,33 @@ const lightGrey = '#93A3B1';
 const darkGrey = '#7C898B';
 const pink = '#E4959E'; */
 
+/* Alert */
 .alert {
   background-color: #FDB811;
 }
 
+.alert-link {
+  color: #443742;
+}
+
+.alert-link:hover {
+  color: white;
+}
+
+
+/* Header */
+#header-logo {
+  height: 15vh;
+  width: auto;
+}
+
+/* Navigation */
+.nav-link:hover {
+  color: #FDB811;
+  text-decoration: underline;
+}
+
+/* Footer */
 .footer {
   background-color: #443742;
-  width: 100vw;
-  position: fixed;
-  bottom: 0;
-
 }
