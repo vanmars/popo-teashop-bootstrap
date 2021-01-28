@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Alert = () => {
   return ( 
-    <div className="alert text-center p-1">
+    <div className="alert text-center p-0">
       <Link 
         to='/updates'
-        className= 'alert-link text-decoration-none fw-light fs-6'
+        className= 'alert-link fw-light'
       >
         COVID Response
       </Link>
