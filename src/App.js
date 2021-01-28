@@ -17,9 +17,10 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Alert />
         <Header />
-        <Navbar />
+        
         <Switch>
           <Route exact path="/" component={() => <Splash /> } />
           <Route exact path="/eat" component={() => <Eat /> } />
