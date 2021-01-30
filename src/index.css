@@ -1,5 +1,10 @@
+html {
+  overflow-x: hidden;
+};
+
 body {
   box-sizing: border-box;
+
   /* background-color: #545254; */
 }
 
@@ -10,7 +15,16 @@ const lightGrey = '#93A3B1';
 const darkGrey = '#93A3B1';
 const pink = '#E4959E'; */
 
+/* Break Points */
+/* sm - 576 */
+/* md - 768 */
+/* lg - 992 */
+/* xl - 1200 */
+/* xxl 1400 */
+
+/*********/
 /* Alert */
+/*********/
 .alert {
   background-color: #FDB811;
   border-radius: 0;
@@ -18,20 +32,44 @@ const pink = '#E4959E'; */
 
 .alert-link {
   color: #443742;
-  font-size: 10px;
+  font-size: 14px;
   text-decoration: none;
+  line-height: 2rem;
 }
 
 .alert-link:hover {
   color: white;
 }
 
-/* Updates */
-.covid-letter {
-  width: 90vw;
+/**************/
+/* Navigation */
+/**************/
+.nav-link:hover {
+  color: #FDB811;
+  text-decoration: underline;
 }
 
+.nav-pickup-btn {
+  color:#FDB811;
+}
+
+.nav-delivery-btn:hover{
+  color: white;
+}
+
+.nav-pickup-btn:hover {
+  background-color: #443742;
+  color: white;
+}
+
+.collapse .navbar-nav {
+  margin-right:1rem;
+  margin-left: auto;
+}
+
+/**********/
 /* Header */
+/**********/
 #header-logo {
   height: 15vh;
   width: auto;
@@ -40,25 +78,14 @@ const pink = '#E4959E'; */
 .header {
   background-color: #443742;
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23221c21' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-/* Navigation */
-.nav-link:hover {
-  color: #FDB811;
-  text-decoration: underline;
-}
-
-/* Splash */
-.carousel {
+  position: relative;
   height: 70vh;
+
+}
+
+.carousel {
   color: #FDB811;
   width: 100%;
-  /* max-width: 768px; */
-  margin-top: 1rem;
-}
-
-.carousel img { 
-  height: 60vh;
 }
 
 .carousel-caption {
@@ -66,6 +93,16 @@ const pink = '#E4959E'; */
   top: 10vh;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-delivery-btn {
+    margin-right: 1rem;
+  }
+}
+
+
+/**********/
+/* Splash */
+/**********/
 .splash-eat {
   height: 75vh;
   background-color: #f4f3f2;
@@ -122,11 +159,18 @@ const pink = '#E4959E'; */
   background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%238b8883' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+/***********/
+/* Updates */
+/***********/
+.covid-letter {
+  width: 100vw;
+  margin: 0;
+  padding:0;
+}
 
-
-
-
+/**********/
 /* Footer */
+/**********/
 .footer {
   /* margin-top: 5rem; */
   background-color: #443742;

@@ -6,9 +6,9 @@ const Alert = () => {
     <div className="alert text-center p-0 m-0">
       <Link 
         to='/updates'
-        className= 'alert-link fw-light'
+        className= 'alert-link fw-normal'
       >
-        COVID Response
+        Caring for Our Community: COVID Response
       </Link>
     </div>
    );

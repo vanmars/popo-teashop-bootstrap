@@ -2,7 +2,6 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Alert from './components/shared/Alert';
-import Header from './components/shared/Header';
 import Navbar from './components/shared/Navbar';
 import Splash from './components/Splash';
 import Eat from './components/Eat';
@@ -18,12 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Alert />
-        <Navbar />
-        <Header />
-  
-        
-        
-        
+        <Navbar /> 
         <Switch>
           <Route exact path="/" component={() => <Splash /> } />
           <Route exact path="/eat" component={() => <Eat /> } />
