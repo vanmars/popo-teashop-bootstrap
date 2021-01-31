@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './shared/Header';
 
 const Splash = () => {
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [posts, setPosts] = useState([]);
+
+  const makeInstaApiCall = () => {
+    fetch(``)
+      .then(response => response.json())
+      .then(data => {
+        setIsLoaded(true);
+        setPosts(data.results);  // or however you parse the response
+      })
+      .catch(err => {
+        setIsLoaded(true);
+        setError(err);
+      })
+  }
+
   return ( 
     <React.Fragment>
       <Header />
@@ -64,7 +81,11 @@ const Splash = () => {
         </div>
       </div>
 
-      <div className="splash-social"></div>
+      <div className="splash-social">
+
+      </div>
+
+
     </React.Fragment>
    );
 }
