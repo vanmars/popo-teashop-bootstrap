@@ -6,9 +6,9 @@ const Splash = () => {
     <React.Fragment>
       <Header />
       <div className="splash-eat d-flex justify-content-center">
-        <div class="card shadow-lg">
-          <img src="/img/storefront.jpeg" class="card-img-top" alt="" />
-          <div class="card-body text-center">
+        <div className="card shadow-lg">
+          <img src="/img/storefront.jpeg" className="card-img-top" alt="" />
+          <div className="card-body d-flex flex-column justify-content-center align-items-center">
             <h1><em>Come eat with us!</em></h1>
             <br />
             <p>405 SE Bishop Blvd Ste #3</p>
@@ -21,24 +21,28 @@ const Splash = () => {
 
 
 
-      <div className="splash-menu">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+      <div className="splash-menu d-flex flex-column align-items-center">
+        <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+          <li className="nav-item" role="presentation">
+            <a className="nav-link active" id="pills-drink-tab" data-bs-toggle="pill" href="#pills-food" role="tab" aria-controls="pills-food" aria-selected="true">Drink Menu</a>
           </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+          <li className="nav-item" role="presentation">
+            <a className="nav-link" id="pills-food-tab" data-bs-toggle="pill" href="#pills-food" role="tab" aria-controls="pills-food" aria-selected="false">Food Menu</a>
           </li>
         </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+
+        <div className="tab-content" id="pills-tabContent">
+          <div className="tab-pane fade show active" id="pills-drink" role="tabpanel" aria-labelledby="pills-drink-tab">
+            <img src="/img/menu1.jpg" alt="" />
+          </div>
+          <div className="tab-pane fade" id="pills-food" role="tabpanel" aria-labelledby="pills-food-tab">
+          <img src="/img/menu2.jpg" alt="" />
+          </div>
         </div>
       </div>
+
+
 
       <div className="splash-team"></div>
       <div className="splash-about"></div>

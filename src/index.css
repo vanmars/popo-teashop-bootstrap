@@ -51,7 +51,7 @@ const pink = '#E4959E'; */
 /**************/
 /* Navigation */
 /**************/
-.nav-link:hover {
+my-navbar .nav-link:hover {
   color: #FDB811;
   text-decoration: underline;
 }
@@ -114,7 +114,7 @@ const pink = '#E4959E'; */
 
 .splash-eat .card {
   margin: 3rem 0 -16rem;
-  padding: 1rem 1rem 2.5rem;
+  padding: 1rem 1rem 2rem;
   width: 80%;
 }
 
@@ -141,18 +141,29 @@ const pink = '#E4959E'; */
   font-weight: bold;
 }
 
-
-
-
-
-
-
-/*********************/
-/* Splash - Location */
-/*********************/
+/*****************/
+/* Splash - Menu */
+/*****************/
 .splash-menu {
-  height: 100vh;
+  height: 95vh;
   background-color: white;
+}
+
+.splash-menu ul {
+  margin-top: 20rem;
+}
+
+.splash-menu .nav-link {
+  color:#93A3B1;
+}
+
+.splash-menu .nav-item .active {
+  background-color: #FDB811;
+}
+
+.splash-menu img {
+  height: 200px;
+  width: auto;
 }
 
 /*****************/
