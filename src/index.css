@@ -119,7 +119,7 @@ my-navbar .nav-link:hover {
 }
 
 .splash-eat h1 {
-  color: #93A3B1
+  color: #93A3B1;
 }
 
 .splash-eat h5, .splash-eat p {
@@ -133,7 +133,8 @@ my-navbar .nav-link:hover {
 }
 
 .splash-eat a {
-  color: #93A3B1
+  color: #93A3B1;
+  text-decoration: none;
 }
 
 .splash-eat a:hover {
@@ -162,17 +163,8 @@ my-navbar .nav-link:hover {
 }
 
 .splash-menu img {
-  height: 200px;
+  height: 30vh;
   width: auto;
-}
-
-/*****************/
-/* Splash - Team */
-/*****************/
-.splash-team {
-  height: 75vh;
-  background-color: #f2ddab;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23fdb811' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 /******************/
@@ -180,7 +172,58 @@ my-navbar .nav-link:hover {
 /******************/
 .splash-about {
   height: 75vh;
+  background-color: #f2ddab;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23fdb811' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.splash-about .card {
+  background-color:#FDB811;
+  color: white;
+  font-style: italic;
+  width: 100%;
+  font-family:'Quicksand', sans-serif;
+  border-radius: 0;
+}
+
+/*****************/
+/* Splash - Team */
+/*****************/
+.splash-team {
+  min-height: 100vh;
   background-color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.splash-team img {
+  height: 250px;
+  width: auto;
+}
+
+.splash-team h4 {
+  font-weight: bold;
+  color: #FDB811;
+}
+
+.splash-team li {
+  list-style-type: none;
+}
+
+.splash-team hr {
+  width: 75%;
+  text-align: center;
+}
+
+.splash-team span {
+  color: #FDB811;
+  font-weight: bold;
+}
+
+.splash-team button {
+  color:#443742;
+}
+
+.splash-team button:hover {
+  color:white;
 }
 
 /************************/
@@ -205,7 +248,6 @@ my-navbar .nav-link:hover {
 /* Footer */
 /**********/
 .footer {
-  /* margin-top: 5rem; */
   background-color: #443742;
   width: 100vw;
 }
