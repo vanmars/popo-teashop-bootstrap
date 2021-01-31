@@ -62,13 +62,7 @@ const Header = () => {
           </a>
         </div> 
         </div>
-
-
-
       </div>
-
-      
-       
     </React.Fragment>
    );
 }
