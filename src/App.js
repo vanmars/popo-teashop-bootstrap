@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Alert from './components/shared/Alert';
@@ -13,11 +13,16 @@ import Updates from './components/Updates';
 import Footer from './components/shared/Footer';
 
 function App() {
+  const [page, setPage] = useState('splash');
+
   return (
     <div className="App">
       <BrowserRouter>
         <Alert />
-        <Navbar /> 
+        <Navbar 
+          page={page}
+          setPage={setPage}
+        /> 
         <Switch>
           <Route exact path="/" component={() => <Splash /> } />
           <Route exact path="/eat" component={() => <Eat /> } />
@@ -29,6 +34,8 @@ function App() {
         </Switch>
         <Footer />
       </BrowserRouter>
+
+
     </div>
   );
 }
