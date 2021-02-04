@@ -1,15 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Alert = () => {
+const Alert = ({setPage}) => {
   return ( 
-    <div className="alert text-center p-0 m-0">
-      <Link 
-        to='/updates'
-        className= 'alert-link fw-normal'
-      >
-        Caring for Our Community: COVID Response
-      </Link>
+    <div className="alert d-flex justify-content-center align-items-center p-0 m-0">
+      <p className= 'alert-link fw-normal m-0 p-2' onClick={() => setPage('updates')}>Caring for Our Community: COVID Response</p>
     </div>
    );
 }
