@@ -35,7 +35,7 @@ const Splash = () => {
           </div>
         </div>
       </div>
-      <div className="splash-menu d-flex flex-column align-items-center">
+      <div className="splash-menu d-flex flex-column align-items-center" id="splash-menu">
         <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li className="nav-item" role="presentation">
             <a className="nav-link active" id="pills-drink-tab" data-bs-toggle="pill" href="#pills-food" role="tab" aria-controls="pills-food" aria-selected="true">Drink Menu</a>

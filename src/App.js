@@ -15,11 +15,8 @@ function App() {
   let currentlyVisiblePage = null;
 
   switch(page) {
-    case 'splash': 
+    case 'splash' || 'menu': 
       currentlyVisiblePage = <Splash />;
-      break;
-    case 'menu':
-      currentlyVisiblePage = <Eat />;
       break;
     case 'gallery':
       currentlyVisiblePage = <Gallery />;
@@ -43,7 +40,6 @@ function App() {
         setPage={setPage}
       />
       <Navbar 
-        page={page}
         setPage={setPage}
       />
       {currentlyVisiblePage}
