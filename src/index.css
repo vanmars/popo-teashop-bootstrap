@@ -105,6 +105,7 @@ my-navbar .nav-link:hover {
 /****************/
 /* Splash - Eat */
 /****************/
+
 .splash-eat {
   height: 40vh;
   background-color: #f4f3f2;
@@ -144,6 +145,15 @@ my-navbar .nav-link:hover {
 /*****************/
 /* Splash - Menu */
 /*****************/
+@media screen and (min-width: 768px) {
+  .splash-menu {
+    margin-top: 4rem;
+  }
+  .splash-menu img {
+    width: 700px;
+  }
+}
+
 .splash-menu {
   height: 95vh;
   background-color: white;

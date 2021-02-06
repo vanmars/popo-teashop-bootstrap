@@ -35,6 +35,7 @@ const Splash = () => {
           </div>
         </div>
       </div>
+
       <div className="splash-menu d-flex flex-column align-items-center" id="splash-menu">
         <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li className="nav-item" role="presentation">
@@ -53,6 +54,7 @@ const Splash = () => {
           </div>
         </div>
       </div>
+      
       <div className="splash-about d-flex justify-content-center align-items-center">
         <div className="card p-3 text-center">
         <p>POPO is a local business that aims to bring amazing Asian flavors to the Palouse and create a great atmosphere for people to relax and hang out with their friends!</p>
