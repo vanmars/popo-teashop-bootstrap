@@ -96,12 +96,6 @@ my-navbar .nav-link:hover {
   min-height: 65vh;
 }
 
-@media screen and (min-width: 768px) {
-  .nav-delivery-btn {
-    margin-right: 1rem;
-  }
-}
-
 /****************/
 /* Splash - Eat */
 /****************/
@@ -145,14 +139,6 @@ my-navbar .nav-link:hover {
 /*****************/
 /* Splash - Menu */
 /*****************/
-@media screen and (min-width: 768px) {
-  .splash-menu {
-    margin-top: 4rem;
-  }
-  .splash-menu img {
-    width: 700px;
-  }
-}
 
 .splash-menu {
   height: 95vh;
@@ -286,4 +272,51 @@ my-navbar .nav-link:hover {
 .footer-icons:hover {
   color: white;
   margin: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-delivery-btn {
+    margin-right: 1rem;
+  }
+
+  .splash-eat {
+    height: 60vh;
+  }
+
+  .splash-eat card {
+    margin: 3rem 5rem -16rem;
+  }
+  
+  .splash-menu {
+    padding-top: 5rem;
+  }
+
+  .splash-menu img {
+    width: 85vw;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 987px) {
+  .splash-eat .card {
+    margin: 3rem 10rem -16rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .splash-eat .card {
+    margin: 3rem 15rem -16rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .splash-eat .card {
+    margin: 3rem 20rem -16rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .splash-eat .card {
+    margin: 3rem 25rem -16rem;
+  }
 }
