@@ -17,7 +17,7 @@ const Navbar = ({setPage}) => {
               <a className="nav-link" onClick={() => setPage('splash')} href="#splash-menu">Menu</a>
               <a className="nav-link" onClick={() => setPage('gallery')} href="#">Gallery</a>
               <a className="nav-link" onClick={() => setPage('location')} href="#">Location</a>
-              <a className="nav-link" onClick={() => setPage('team')} href="#">Team</a>
+              <a className="nav-link" onClick={() => setPage('splash')} href="#splash-team">Team</a>
             </div>
           </div>
         </div>

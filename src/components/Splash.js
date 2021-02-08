@@ -61,7 +61,7 @@ const Splash = () => {
         </div>
       </div>
 
-      <div className="splash-team d-flex flex-column align-items-center">
+      <div id="splash-team" className="splash-team d-flex flex-column align-items-center">
         <div className="hiring-banner">
           <img src="/img/hiring-banner.png" alt=""/>
         </div>
