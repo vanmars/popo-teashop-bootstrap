@@ -30,7 +30,7 @@ const Splash = () => {
             <br />
             <p>405 SE Bishop Blvd Ste #3</p>
             <p>Pullman, WA 99163</p>
-            <a href="#">Hours</a>
+            <a href="#">12:00 PM - 9:00 PM</a>
             <br />
           </div>
         </div>
@@ -60,7 +60,8 @@ const Splash = () => {
         <p>POPO is a local business that aims to bring amazing Asian flavors to the Palouse and create a great atmosphere for people to relax and hang out with their friends!</p>
         </div>
       </div>
-      <div className="splash-team d-flex flex-column align-items-center my-4">
+
+      <div className="splash-team d-flex flex-column align-items-center">
         <div className="hiring-banner">
           <img src="/img/hiring-banner.png" alt=""/>
         </div>
@@ -75,6 +76,7 @@ const Splash = () => {
           </ul>
         </div>
         <hr />
+
         <div className="hiring-text text-center my-3 p-3">
           <p>We are looking for <span>FRIENDLY PEOPLE</span> who are willing to <span>WORK HARD</span> and enjoy being part of a <span>
           TEAM!</span></p>
@@ -84,10 +86,7 @@ const Splash = () => {
       </div>
 
       <div className="splash-social">
-
       </div>
-
-
     </React.Fragment>
    );
 }

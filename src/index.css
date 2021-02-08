@@ -94,6 +94,7 @@ my-navbar .nav-link:hover {
 
 .carousel img {
   min-height: 65vh;
+  max-height: 85vh;
 }
 
 /****************/
@@ -185,12 +186,12 @@ my-navbar .nav-link:hover {
 /*****************/
 .splash-team {
   min-height: 100vh;
-  background-color: white;
+  background-color: #FAFAFA;
   font-family: 'Quicksand', sans-serif;
 }
 
 .splash-team img {
-  height: 250px;
+  height: 300px;
   width: auto;
 }
 
@@ -274,6 +275,19 @@ my-navbar .nav-link:hover {
   margin: 0.5rem;
 }
 
+/* Responsive Sizing */
+
+@media screen and (min-width: 600px) {
+  .splash-menu {
+    height: 115vh;
+    padding-top: 4rem;
+  }
+
+  .splash-menu img {
+    width: 80vw;
+  }
+}
+
 @media screen and (min-width: 690px) {
   .splash-menu {
     height: 120vh;
@@ -323,6 +337,11 @@ my-navbar .nav-link:hover {
   .splash-about p {
     font-size: 26px;
   }
+
+  .splash-team img {
+    height: 350px;
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -332,6 +351,15 @@ my-navbar .nav-link:hover {
 
   .splash-about p {
     font-size: 28px;
+  }
+
+  .splash-team img {
+    height: 400px;
+    width: auto;
+  }
+
+  .splash-team {
+    padding-bottom: 50px;
   }
 }
 
@@ -358,9 +386,5 @@ my-navbar .nav-link:hover {
   .splash-menu {
     height: 180vh;
     padding-top: 10rem;
-  }
-
-  .splash-about p {
-    font-size: 46px;
   }
 }
