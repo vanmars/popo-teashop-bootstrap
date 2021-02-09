@@ -13,10 +13,10 @@ const Navbar = ({setPage}) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link" aria-current="page" onClick={() => setPage('splash')} href="#">Home</a>
+              <a className="nav-link" aria-current="page" onClick={() => setPage('splash')} href="/">Home</a>
               <a className="nav-link" onClick={() => setPage('splash')} href="#splash-menu">Menu</a>
-              <a className="nav-link" onClick={() => setPage('gallery')} href="#">Gallery</a>
-              <a className="nav-link" onClick={() => setPage('location')} href="#">Location</a>
+              <p className="nav-link pb-0" onClick={() => setPage('gallery')}>Gallery</p>
+              <p className="nav-link pb-0" onClick={() => setPage('location')}>Location</p>
               <a className="nav-link" onClick={() => setPage('splash')} href="#splash-team">Team</a>
             </div>
           </div>
