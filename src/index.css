@@ -185,7 +185,7 @@ my-navbar .nav-link:hover {
 /* Splash - Team */
 /*****************/
 .splash-team {
-  min-height: 100vh;
+  min-height: 65vh;
   background-color: #FAFAFA;
   font-family: 'Quicksand', sans-serif;
 }
@@ -408,9 +408,9 @@ my-navbar .nav-link:hover {
     width: auto;
   }
 
-  .splash-team {
-    padding-bottom: 50px;
-  }
+  /* .splash-team {
+    padding-bottom: 30px;
+  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -426,15 +426,32 @@ my-navbar .nav-link:hover {
   .splash-about p {
     font-size: 32px;
   }
+
+  .splash-team {
+    padding: 60px 10px 0;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1400px) {
   .splash-eat .card {
-    margin: 3rem 25rem -16rem;
+    margin: 3rem 25rem -26rem;
+  }
+  .splash-eat img {
+    height: 75vh;
   }
 
   .splash-menu {
     height: 180vh;
-    padding-top: 10rem;
+    padding-top: 20rem;
+  }
+
+  .splash-team img {
+    height: 500px;
+    width: auto;
+  }
+
+  .splash-team {
+    padding: 20px;
   }
 }

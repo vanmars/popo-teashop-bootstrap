@@ -66,7 +66,7 @@ const Splash = () => {
           <img src="/img/hiring-banner.png" alt=""/>
         </div>
         <hr />
-        <div className="hiring-text text-center my-3 p-3">
+        <div className="hiring-text text-center pt-5 pb-5">
           <h4>PART-TIME POSITIONS</h4>
           <ul>
             <li>Flexible hours!</li>
@@ -75,9 +75,8 @@ const Splash = () => {
             <li>Add customer service skills to your resume!</li>
           </ul>
         </div>
-        <hr />
 
-        <div className="hiring-text text-center my-3 p-3">
+        <div className="hiring-text text-center p-5">
           <p>We are looking for <span>FRIENDLY PEOPLE</span> who are willing to <span>WORK HARD</span> and enjoy being part of a <span>
           TEAM!</span></p>
           <br />
