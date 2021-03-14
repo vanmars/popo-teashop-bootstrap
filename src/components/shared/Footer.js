@@ -39,7 +39,7 @@ const Footer = () => {
 
         <div className="row mt-5">
           <div className= "col">
-            <p className="footer-copy"><span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> POPO, Inc. All Rights Reserved.</p>
+            <p className="footer-copy"><span dangerouslySetInnerHTML={{ "__html": "&copy;" }} />  2021 POPO, Inc. All Rights Reserved.</p>
           </div>
         </div>
       </div>

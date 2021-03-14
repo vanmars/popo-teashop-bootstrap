@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Header from './shared/Header';
+import InstagramEmbed from 'react-instagram-embed';
 
 const Splash = () => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [posts, setPosts] = useState([]);
 
-  const makeInstaApiCall = () => {
+  const makeInstagramApiCall = () => {
     fetch(``)
       .then(response => response.json())
       .then(data => {
@@ -30,7 +31,7 @@ const Splash = () => {
             <br />
             <p>405 SE Bishop Blvd Ste #3</p>
             <p>Pullman, WA 99163</p>
-            <a href="#">12:00 PM - 9:00 PM</a>
+            <a href="/">12:00 PM - 9:00 PM</a>
             <br />
           </div>
         </div>
@@ -84,7 +85,21 @@ const Splash = () => {
         </div>
       </div>
 
-      <div className="splash-social">
+      <div className="splash-social d-flex justify-content-center align-items-center">
+        <h1 className="text-center"><em>Instagram Wall Coming Soon!</em></h1>
+        
+        <InstagramEmbed
+          url='https://www.instagram.com/p/CKMjiqrJcqt/'
+          maxWidth={320}
+          hideCaption={false}
+          containerTagName='div'
+          protocol=''
+          injectScript
+          onLoading={() => {}}
+          onSuccess={() => {}}
+          onAfterRender={() => {}}
+          onFailure={() => {}}
+        />
       </div>
     </React.Fragment>
    );
