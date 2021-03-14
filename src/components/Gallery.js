@@ -3,19 +3,45 @@ import React from 'react';
 const Gallery = () => {
   return ( 
     <React.Fragment>
-      <div className="gallery">
-        <div className="gallery-header">
+      <div className="gallery container mb-5">
+        <div className="gallery-header text-center">
           <h1>Gallery</h1>
         </div>
 
-        <div className="gallery-menu container">
-          <div className="gallery-drinks">
-            <img className="gallery-thumbnail" src="/img/drinks-on-table.jpeg" />
+        <div className="gallery-menu row d-flex justify-content-center">
+
+          <div className="gallery-menu-item col-sm-12 m-2">
+            <div className='gallery-image' style={{backgroundImage: `url("/img/three-drinks-with-beans.jpg")`}} />
+            <div className='gallery-menu-content'>
+              <h3>Drinks</h3>
+            </div>
           </div>
+
+          <div className="gallery-menu-item col-sm-12 m-2">
+            <div className='gallery-image' style={{backgroundImage: `url("/img/Saseme balls.jpg")`}} />
+            <div className='gallery-menu-content'>
+              <h3>Snacks</h3>
+            </div>
+          </div>
+
+          <div className="gallery-menu-item col-sm-12 m-2">
+            <div className='gallery-image' style={{backgroundImage: `url("/img/Spicy HP 2.jpg")`}} />
+            <div className='gallery-menu-content'>
+              <h3>Entrees</h3>
+            </div>
+          </div>
+
+          <div className="gallery-menu-item col-sm-12 m-2">
+            <div className='gallery-image' style={{backgroundImage: `url("/img/Boba cake.jpg")`}} />
+            <div className='gallery-menu-content'>
+              <h3>Desserts</h3>
+            </div>
+          </div>
+          
 
         </div>
           
-        <div className="gallery-drinks">
+        {/* <div className="gallery-drinks">
           
           <div className="row justify-content-center">
             <div id="carouselDrinks" className="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
@@ -185,7 +211,7 @@ const Gallery = () => {
               </a>
             </div> 
           </div>
-        </div>
+        </div> */}
         
 
       </div>

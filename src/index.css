@@ -278,7 +278,7 @@ my-navbar .nav-link:hover {
 /***********/
 /* GALLERY */
 /***********/
-.gallery, .location {
+.location {
   color: #FDB811;
   background-color: #443742;
   text-align: center;
@@ -291,11 +291,54 @@ my-navbar .nav-link:hover {
   font-weight: 200;
 }
 
-.gallery-thumbnail {
+.gallery-menu-item {
+  overflow: hidden;
   width: 300px;
   height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
 }
 
+.gallery-menu-item:hover .gallery-image {
+  opacity: 0.7;
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95), opacity 1s;
+}
+
+.gallery-menu-item:hover .gallery-menu-content {
+  opacity: 0.9;
+  transition: opacity 1s;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery-menu-content {
+  padding: 5px 25px 0;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1 px solid black;
+  border-radius: 2px;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.gallery-menu-content h2{
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 22px;
+  color: #4a4a4a;
+}
 
 .gallery h2 {
   /* background-color: #FDB811; */
