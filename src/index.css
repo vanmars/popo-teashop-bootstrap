@@ -291,11 +291,18 @@ my-navbar .nav-link:hover {
   font-weight: 200;
 }
 
+.gallery-thumbnail {
+  width: 300px;
+  height: 300px;
+}
+
+
 .gallery h2 {
-  background-color: #FDB811;
+  /* background-color: #FDB811; */
   padding: 2px; 
+  border: solid black 2px;
   color:  #443742;
-  text-align: center;
+  text-align: left;
   margin-bottom: 15px;
 }
 
@@ -305,7 +312,7 @@ my-navbar .nav-link:hover {
 
 .gallery .carousel {
   color: #FDB811;
-  width: 80%;
+  width: 75%;
 }
 
 .gallery .carousel img {
@@ -333,6 +340,15 @@ my-navbar .nav-link:hover {
   background: white;
   /* color: #443742; */
   padding: 60px;
+}
+
+.news-link {
+  color: #FDB811;
+  text-decoration: none;
+}
+
+.news-link:hover {
+  color: #443742;
 }
 
 /*********************/

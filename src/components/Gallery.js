@@ -4,10 +4,19 @@ const Gallery = () => {
   return ( 
     <React.Fragment>
       <div className="gallery">
-        <h1>Gallery</h1>
+        <div className="gallery-header">
+          <h1>Gallery</h1>
+        </div>
 
+        <div className="gallery-menu container">
+          <div className="gallery-drinks">
+            <img className="gallery-thumbnail" src="/img/drinks-on-table.jpeg" />
+          </div>
+
+        </div>
+          
         <div className="gallery-drinks">
-          <h2>Drinks</h2>
+          
           <div className="row justify-content-center">
             <div id="carouselDrinks" className="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
               <div className="carousel-inner">

@@ -37,7 +37,7 @@ const Location = () => {
       <hr className="mx-auto" style={{color: '#FDB811', width: '75%'}}/>
       <br />
 
-      <div className="inside">
+      <div className="inside container">
         <img id="img-2"  src="/img/cash-register-with-bar.jpeg" alt=""/>
         <img id="img-3"  src="frontdoor-from-inside.jpeg" alt=""/>
         <img id="img-4"  src="/img/boardgames-with-drinks.jpeg" alt=""/>
@@ -54,7 +54,12 @@ const Location = () => {
       <div className="news">
         <div className="row d-flex justify-content-center align-items-center">
          <div className="col-sm-12 col-md-6">
-            <h4>Check POPO out in the News!</h4>
+            <h4><a 
+              href="https://coronaviruscampusnews.com/restaurant-embraces-social-distancing-to-promote-health/"
+              className="news-link"
+            >
+              Check POPO out in the News!
+            </a></h4>
           </div>
           <div className="col-sm-12 col-md-6">
           <img id="img-13"  src="/img/news-article.jpeg" alt=""/>
