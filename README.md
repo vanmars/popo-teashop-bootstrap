@@ -1,4 +1,4 @@
-# _POPO Bubble Teashop_
+# :tea: _POPO Bubble Tea Shop_
 
 _4 February 2021_
 
@@ -7,7 +7,6 @@ _4 February 2021_
 #### By _**Vanessa Stewart**_
 
 ## Description
-
 _This is a single-page React.js website, built to improve business for a bubble teashop in Spokane, WA. The owners wanted visitors to be able to quickly order food, see a menu, and get exposure to a well of pictures. Information on applying for a job was also important, as their staff is comprised of college students, which leads to lots of turn over._
 
 ## Setup/Installation Requirements
@@ -22,16 +21,13 @@ To Extend This Project:
 * run `npm start` to start a local server.
 
 ## Known Bugs
-
 _There are no known bugs at this time._
 
 ## To-Do Items
-
-1. Add responsive sizing to splash page.
-2. Build out gallery page.
-3. Build out location page.
-4. Build out team page.
-5. Get FB user info to access instagram posts, and display on splash page.
+1. Create separate modal galleries on gallery page.
+2. Add animated transtions on scrolling to pages.
+2. Get FB user info to access instagram posts, and display on splash page.
+3. Continue tweaking responsive styling on splash page for very large viewports.
 
 ## Technologies Used
 
