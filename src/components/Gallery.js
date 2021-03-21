@@ -3,7 +3,7 @@ import React from 'react';
 const Gallery = () => {
   return ( 
     <React.Fragment>
-      <div className="gallery container mb-5">
+      <div className="gallery container">
         <div className="gallery-header text-center">
           <h1>Gallery</h1>
         </div>
