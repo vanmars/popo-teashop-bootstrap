@@ -28,6 +28,5 @@ const Navbar = ({setPage}) => {
 Navbar.propTypes = {
   setPage: PropTypes.func,
 }
-
  
 export default Navbar;
