@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import GalleryModal from './shared/GalleryModal';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import drinkImages from './../images/drinkImages';
 import snackImages from './../images/snackImages';
 import entreeImages from './../images/entreeImages';
@@ -14,7 +14,7 @@ const Gallery = () => {
 
   return ( 
     <div className="gallery">
-      <Container>
+      {/* <Container> */}
         {/* Modals */}
         <GalleryModal 
           show={drinksModalShow}
@@ -44,37 +44,38 @@ const Gallery = () => {
         <div className="gallery-header text-center">
           <h1>Gallery</h1>
         </div>
-        <div className="gallery-menu row d-flex justify-content-center">
+
+        <Row sm={1} lg={2} xl={4} className="gallery-menu justify-content-center">
           {/* Drinks Section */}
-          <div className="gallery-menu-item col-sm-12 m-2">
+          <Col className="gallery-menu-item">
             <div className='gallery-image' style={{backgroundImage: `url("/img/three-drinks-with-beans.jpg")`}} />
             <div className='gallery-menu-content'>
               <h3 type="button" onClick={() => setDrinksModalShow(true)}>Drinks</h3>
             </div>
-          </div>
+          </Col>
           {/* Snacks Section */}
-          <div className="gallery-menu-item col-sm-12 m-2">
+          <Col className="gallery-menu-item">
             <div className='gallery-image' style={{backgroundImage: `url("/img/Saseme balls.jpg")`}} />
             <div className='gallery-menu-content'>
               <h3 type="button" onClick={() => setSnacksModalShow(true)}>Snacks</h3>
             </div>
-          </div>
+          </Col>
           {/* Entrees Section */}
-          <div className="gallery-menu-item col-sm-12 m-2">
+          <Col className="gallery-menu-item">
             <div className='gallery-image' style={{backgroundImage: `url("/img/Spicy HP 2.jpg")`}} />
             <div className='gallery-menu-content'>
               <h3 type="button" onClick={() => setEntreesModalShow(true)}>Entrees</h3>
             </div>
-          </div>
+          </Col>
           {/* Desserts Section */}
-          <div className="gallery-menu-item col-sm-12 m-2">
+          <Col className="gallery-menu-item">
             <div className='gallery-image' style={{backgroundImage: `url("/img/Boba cake.jpg")`}} />
             <div className='gallery-menu-content'>
               <h3 type="button" onClick={() => setDessertsModalShow(true)}>Desserts</h3>
             </div>
-          </div>
-        </div>
-      </Container>
+          </Col>
+        </Row>
+      {/* </Container> */}
     </div>
    );
 }
