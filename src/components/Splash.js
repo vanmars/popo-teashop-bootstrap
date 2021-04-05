@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from './shared/Header';
 import InstagramEmbed from 'react-instagram-embed';
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Splash = () => {
   const [error, setError] = useState(null);
@@ -23,6 +24,8 @@ const Splash = () => {
   return ( 
     <React.Fragment>
       <Header />
+
+      {/* Dine with Us */}
       <div className="splash-eat d-flex justify-content-center">
         <div className="card shadow-lg">
           <img src="/img/storefront.jpeg" className="card-img-top" alt="" />
@@ -37,6 +40,7 @@ const Splash = () => {
         </div>
       </div>
 
+      {/* Menu */}
       <div className="splash-menu d-flex flex-column align-items-center" id="splash-menu">
         <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li className="nav-item" role="presentation">
@@ -56,12 +60,14 @@ const Splash = () => {
         </div>
       </div>
       
+      {/* About */}
       <div className="splash-about d-flex justify-content-center align-items-center">
         <div className="card p-3 text-center">
         <p>POPO is a local business that aims to bring amazing Asian flavors to the Palouse and create a great atmosphere for people to relax and hang out with their friends!</p>
         </div>
       </div>
 
+    {/* Hiring */}
       <div id="splash-team" className="splash-team d-flex flex-column align-items-center">
         <div className="hiring-banner">
           <img src="/img/hiring-banner.png" alt=""/>
@@ -76,7 +82,6 @@ const Splash = () => {
             <li>Add customer service skills to your resume!</li>
           </ul>
         </div>
-
         <div className="hiring-text text-center p-5">
           <p>We are looking for <span>FRIENDLY PEOPLE</span> who are willing to <span>WORK HARD</span> and enjoy being part of a <span>
           TEAM!</span></p>
@@ -85,9 +90,28 @@ const Splash = () => {
         </div>
       </div>
 
+      {/* News */}
+      <div className="splash-news">
+        <Container>
+          <Row className="justify-content-around align-items-center">
+            <Col md={12} lg={6}>
+              <h2>Check out POPO in the <a 
+                href="https://coronaviruscampusnews.com/restaurant-embraces-social-distancing-to-promote-health/"
+                className="news-link"
+              >
+                News!
+              </a></h2>
+            </Col>
+            <Col md={12} lg={4} className="text-right">
+              <img src="/img/news-article.jpeg" alt=""/>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
+      {/* Instagram Wall */}
       <div className="splash-social d-flex justify-content-center align-items-center">
         <h1 className="text-center"><em>Instagram Wall Coming Soon!</em></h1>
-        
         <InstagramEmbed
           url='https://www.instagram.com/p/CKMjiqrJcqt/'
           maxWidth={320}
