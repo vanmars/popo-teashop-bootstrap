@@ -290,7 +290,7 @@ my-navbar .nav-link:hover {
   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23221c21' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-.gallery h1, .location h1 {
+.gallery h1{
   padding: 50px;
   font-size: 60px;
   font-weight: 200;
@@ -373,32 +373,78 @@ my-navbar .nav-link:hover {
 /***********/
 /* LOCATION*/
 /***********/
-.location {
+.location-image{
   color: #FDB811;
-  background-color: #443742;
   text-align: center;
-  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23221c21' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: url("http://localhost:3000/img/storefront.jpeg"), #443742;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 60vh;
 }
 
-.location img {
-  max-height: 300px;
+.location-image::before {
+  background-color: #443742;
+  opacity: 0.7;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.location-content {
+  position: absolute;
+  top: 5rem;
+}
+
+.location-content h1{
+  padding: 50px;
+  font-size: 60px;
+  font-weight: 200;
+  color: #FDB811;
+}
+
+.location h2, .location h3 {
+  padding: 50px;
+  font-size: 50px;
+  font-weight: 200;
+  font-style: italic;
+  color: #443742;
+}
+
+.location h3 {
+  font-size: 40px;
+}
+
+.drive-thru, .inside-store {
+  background-color: #d8d3c8;
+  padding: 3rem 5rem 5rem;
+}
+
+.drive-thru img {
+  max-height: 600px;
   width: auto;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  border-radius: 4rem;
+  margin: 2rem;
 }
 
-.location #img-1, .location #img-13 {
-  border: solid 1px #FDB811;
-  padding: 15px;
+.inside-store img {
+  max-height: 500px;
+  width: auto;
+  border-radius: 5rem;
+  padding: 2rem;
 }
 
 .location .news {
   background: white;
-  /* color: #443742; */
   padding: 60px;
 }
 
+#news {
+  background-color: #DFDBE5;
+}
 .news-link {
   color: #FDB811;
   text-decoration: none;
