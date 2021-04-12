@@ -24,9 +24,9 @@ To Extend This Project:
 _There are no known bugs at this time._
 
 ## To-Do Items
-1. Create separate modal galleries on gallery page.
-2. Continue tweaking responsive styling on splash page for very large viewports.
-3. Create better design for Layout page; it's kind of boring.
+1. Responsive styling for splash page
+2. Responsive styling for location page
+3. Change image sizing for entrees modals in gallery view.
 4. Add animated transtions on-scroll to splash page.
 5. Get FB user info to access instagram posts, and display on splash page.
 
