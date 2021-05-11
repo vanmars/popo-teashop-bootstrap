@@ -1,12 +1,12 @@
 import React, { useState} from 'react';
 
-import Alert from './components/shared/Alert';
-import Navbar from './components/shared/Navbar';
-import Splash from './components/Splash';
-import Gallery from './components/Gallery';
-import Location from './components/Location';
-import Updates from './components/Updates';
-import Footer from './components/shared/Footer';
+import Alert from './components/Alert/Alert';
+import Navbar from './components/Navbar/Navbar';
+import Splash from './pages/Splash/Splash';
+import Gallery from './pages/Gallery/Gallery';
+import Location from './pages/Location/Location';
+import Updates from './pages/Updates/Updates';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [page, setPage] = useState('splash');

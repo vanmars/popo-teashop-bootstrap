@@ -1,12 +1,11 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import './location.scss';
 
 const Location = () => {
   return ( 
     <div className="location">
-
       <div className="location-image"></div>
-
       <div className="location-content">
         <h1>Location</h1>
         <hr className="mx-auto" style={{color: '#FDB811', width: '75%'}}/>

@@ -1,0 +1,66 @@
+/***********/
+/* LOCATION*/
+/***********/
+.location-image{
+  color: #FDB811;
+  text-align: center;
+  background: url("http://localhost:3000/img/storefront.jpeg"), #443742;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 60vh;
+}
+
+.location-image::before {
+  background-color: #443742;
+  opacity: 0.7;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.location-content {
+  position: absolute;
+  top: 5rem;
+}
+
+.location-content h1{
+  padding: 50px;
+  font-size: 60px;
+  font-weight: 200;
+  color: #FDB811;
+}
+
+.location h2, .location h3 {
+  padding: 50px;
+  font-size: 50px;
+  font-weight: 200;
+  font-style: italic;
+  color: #443742;
+}
+
+.location h3 {
+  font-size: 40px;
+}
+
+.drive-thru, .inside-store {
+  background-color: #d8d3c8;
+  padding: 3rem 5rem 5rem;
+}
+
+.drive-thru img {
+  max-height: 600px;
+  width: auto;
+  border-radius: 4rem;
+  margin: 2rem;
+}
+
+.inside-store img {
+  max-height: 500px;
+  width: auto;
+  border-radius: 5rem;
+  padding: 2rem;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './updates.scss';
 
 const Updates = () => {
   return ( 

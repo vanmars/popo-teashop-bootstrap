@@ -1,26 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import Header from './shared/Header';
 import InstagramEmbed from 'react-instagram-embed';
 import { Container, Row, Col } from 'react-bootstrap';
+import './splash.scss';
+import Header from '../../components/Header/Header';
 
 const Splash = () => {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [posts, setPosts] = useState([]);
 
-  const makeInstagramApiCall = () => {
-    fetch(``)
-      .then(response => response.json())
-      .then(data => {
-        setIsLoaded(true);
-        setPosts(data.results);  // or however you parse the response
-      })
-      .catch(err => {
-        setIsLoaded(true);
-        setError(err);
-      })
-  }
-
+  useEffect(() => {
+    const makeInstagramApiCall = () => {
+      fetch(``)
+        .then(response => response.json())
+        .then(data => {
+          setIsLoaded(true);
+          setPosts(data.results);  // or however you parse the response
+        })
+        .catch(err => {
+          setIsLoaded(true);
+          setError(err);
+        })
+    }
+    makeInstagramApiCall()
+  }, [])
+  
   return ( 
     <React.Fragment>
       <Header />

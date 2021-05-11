@@ -1,4 +1,5 @@
 import React from 'react';
+import './alert.scss';
 
 const Alert = ({setPage}) => {
   return ( 

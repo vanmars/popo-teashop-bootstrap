@@ -1,0 +1,32 @@
+/**************/
+/* Navigation */
+/**************/
+my-navbar .nav-link:hover {
+  color: #FDB811;
+  text-decoration: underline;
+}
+
+.nav-pickup-btn {
+  color:#FDB811;
+}
+
+.nav-delivery-btn:hover{
+  color: white;
+}
+
+.nav-pickup-btn:hover {
+  background-color: #443742;
+  color: white;
+}
+
+.collapse .navbar-nav {
+  margin-right:1rem;
+  margin-left: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav-delivery-btn {
+    margin-right: 1rem;
+  }
+}

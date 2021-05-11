@@ -1,6 +1,8 @@
 import React from 'react';
 import { Modal } from 'react-bootstrap';
-import MyCarousel from './Carousel';
+import './gallery-modal.scss';
+import MyCarousel from '../Carousel/Carousel';
+
 
 const GalleryModal = (props) => {
   const { show, hide, images, title } = props;
